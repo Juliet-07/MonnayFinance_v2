@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply font-[Open Sans];
-    @apply font-[Sans font-serif];
+    @apply font-[Open-Sans];
+    /* @apply font-[Sans-Serif]; */
   }
 }
