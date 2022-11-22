@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { json, NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
@@ -9,6 +9,7 @@ import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 const BASE_URI = "https://monnayfinance.online/api";
 
 const Signup = () => {
+  const navigate = useNavigate();
   const { handleSubmit } = useForm();
   const initialValues = {
     fullname: "",
@@ -50,6 +51,7 @@ const Signup = () => {
           .then((response) => {
             console.log(response, "what is here");
             alert(response.message);
+            navigate("/signin");
           });
       } catch (err) {
         console.log(err.message);
