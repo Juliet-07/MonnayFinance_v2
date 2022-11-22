@@ -61,14 +61,14 @@ const Navbar = () => {
           contact
         </NavLink>
         <NavLink
-          // to="/"
+          to="/signup"
           className="w-[129px] h-[50px] bg-[#057D99]
 uppercase text-white text-center p-3.5 ml-10 mr-4 border rounded-[5px]"
         >
           register
         </NavLink>
         <NavLink
-          // to="/"
+          to="/signin"
           className="w-[129px] h-[50px]
 uppercase text-[#057D99] text-center p-3.5 border rounded-[5px] border-[#057D99]"
         >

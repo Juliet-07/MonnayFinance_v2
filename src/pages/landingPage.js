@@ -4,7 +4,9 @@ import Jumbotron from "../components/Jumbotron";
 import Phone from "../assets/monnayHome.jpg";
 import { TbHeartHandshake } from "react-icons/tb";
 import { BiBarChartSquare } from "react-icons/bi";
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import Strategy from "../assets/monnayStrategy.png";
+import Footer from "../components/Footer";
 
 const LandingPage = () => {
   return (
@@ -74,7 +76,7 @@ const LandingPage = () => {
       </div>
       {/* Trust */}
       {/* Strategy */}
-      <div className="w-full flex flex-col-reverse md:flex-row">
+      <div className="w-full flex flex-col-reverse md:flex-row bg-red-700">
         <div className="flex flex-col bg-[#0a4f60] items-center justify-center">
           <div className="w-[190px] md:w-[290px] h-[39px] md:h-[57px] font-bold text-3xl md:text-5xl text-white relative top-2 md:top-0 left-[-75px]">
             Our Strategy
@@ -97,13 +99,209 @@ const LandingPage = () => {
             conditions are challenging.
           </div>
         </div>
-        <div>
+        <div className="w-full">
           <img src={Strategy} alt="Strategy Session" />
         </div>
       </div>
       {/* Strategy */}
       {/* Investment Plans */}
+      <div className="w-full h-full my-10">
+        <div className="font-bold text-3xl md:text-5xl flex items-center justify-center">
+          Our <font color="#057d99">Investment Plans</font>
+          {/* Our <font color="#057d99">Investment Plans</font> */}
+        </div>
+        <div
+          className="flex flex-col md:flex-row items-center justify-center 
+        my-10 md:my-20"
+        >
+          <div className="w-[377px] h-[629px] border rounded-[10px] bg-white flex flex-col items-center justify-center">
+            <h2 className="text-5xl font-bold text-[#057d99]">Basic</h2>
+            <h4 className="font-bold text-2xl">2% ROI Daily</h4>
+            <div className="w-[312px] border border-[#057d99]"></div>
+            <div className="w-[294px] h-[312px] m-4 text-lg">
+              <ul className="flex flex-col items-center justify-center">
+                <li className="flex my-4">
+                  <span className="mr-2">
+                    <IoMdCheckmarkCircleOutline size={30} color="#057d99" />
+                  </span>
+                  Profit withdrawal:{" "}
+                  <span className="font-bold">Active daily</span>
+                </li>
+                <li className="flex my-4">
+                  <span className="mr-2">
+                    <IoMdCheckmarkCircleOutline size={30} color="#057d99" />
+                  </span>
+                  Capital withdrawal: <span className="font-bold">After</span>
+                </li>
+                <li className="flex my-4">
+                  <span className="mr-2">
+                    <IoMdCheckmarkCircleOutline size={30} color="#057d99" />
+                  </span>
+                  Minimun investment: <span className="font-bold">$100</span>
+                </li>
+                <li className="flex my-4">
+                  <span className="mr-2">
+                    <IoMdCheckmarkCircleOutline size={30} color="#057d99" />
+                  </span>
+                  Maximum investment: <span className="font-bold">$4,999</span>
+                </li>
+                <li className="flex my-4">
+                  <span className="mr-2">
+                    <IoMdCheckmarkCircleOutline size={30} color="#057d99" />
+                  </span>
+                  Daily profit range:{" "}
+                  <span className="font-bold">$2 - $99.98</span>
+                </li>
+                <li className="flex my-4">
+                  <span className="mr-2">
+                    <IoMdCheckmarkCircleOutline size={30} color="#057d99" />
+                  </span>
+                  Referral bonus: <span className="font-bold">5% 3% 1%</span>
+                </li>
+              </ul>
+            </div>
+            <div className="w-[277px] h-[50px] bg-[#057d99] border rounded-[5px] text-white text-center text-sm p-4 mt-12 uppercase hover:font-bold hover:bg-[#0A4F60]">
+              select plan
+            </div>
+          </div>
+          <div className="w-[377px] h-[629px] border rounded-[10px] bg-[#057D99] flex flex-col items-center justify-center text-white mx-[60px] my-[42px] md:my-0">
+            <h2 className="text-5xl font-bold">Standard</h2>
+            <h4 className="font-bold text-2xl">3.5% ROI Daily</h4>
+            <div className="w-[312px] border border-[#ffffff]"></div>
+            <div className="w-[294px] h-[312px] m-4 text-lg">
+              <ul className="flex flex-col items-center justify-center">
+                <li className="flex my-4">
+                  <span className="mr-2">
+                    <IoMdCheckmarkCircleOutline size={30} />
+                  </span>
+                  Profit withdrawal:{" "}
+                  <span className="font-bold">Active daily</span>
+                </li>
+                <li className="flex my-4">
+                  <span className="mr-2">
+                    <IoMdCheckmarkCircleOutline size={30} />
+                  </span>
+                  Capital withdrawal: <span className="font-bold">After</span>
+                </li>
+                <li className="flex my-4">
+                  <span className="mr-2">
+                    <IoMdCheckmarkCircleOutline size={30} />
+                  </span>
+                  Minimun investment: <span className="font-bold">$5,000</span>
+                </li>
+                <li className="flex my-4">
+                  <span className="mr-2">
+                    <IoMdCheckmarkCircleOutline size={30} />
+                  </span>
+                  Maximum investment: <span className="font-bold">$14,999</span>
+                </li>
+                <li className="flex my-4">
+                  <span className="mr-2">
+                    <IoMdCheckmarkCircleOutline size={30} />
+                  </span>
+                  Daily profit range:{" "}
+                  <span className="font-bold">$175 - $524.96</span>
+                </li>
+                <li className="flex my-4">
+                  <span className="mr-2">
+                    <IoMdCheckmarkCircleOutline size={30} />
+                  </span>
+                  Referral bonus: <span className="font-bold">5% 3% 1%</span>
+                </li>
+              </ul>
+            </div>
+            <div className="w-[277px] h-[50px] bg-white border rounded-[5px] text-[#057D99] text-center text-sm p-4 mt-12 uppercase hover:font-bold">
+              select plan
+            </div>
+          </div>
+          <div className="w-[377px] h-[629px] border rounded-[10px] bg-white flex flex-col items-center justify-center">
+            <h2 className="text-5xl font-bold text-[#057d99]">Platinum</h2>
+            <h4 className="font-bold text-2xl">5% ROI Daily for 3 days</h4>
+            <div className="w-[312px] border border-[#057d99]"></div>
+            <div className="w-[294px] h-[312px] m-4 text-lg">
+              <ul className="flex flex-col items-center justify-center">
+                <li className="flex my-4">
+                  <span className="mr-2">
+                    <IoMdCheckmarkCircleOutline size={30} color="#057d99" />
+                  </span>
+                  Profit withdrawal:{" "}
+                  <span className="font-bold">Active daily</span>
+                </li>
+                <li className="flex my-4">
+                  <span className="mr-2">
+                    <IoMdCheckmarkCircleOutline size={30} color="#057d99" />
+                  </span>
+                  Capital withdrawal: <span className="font-bold">After</span>
+                </li>
+                <li className="flex my-4">
+                  <span className="mr-2">
+                    <IoMdCheckmarkCircleOutline size={30} color="#057d99" />
+                  </span>
+                  Minimun investment: <span className="font-bold">$15,000</span>
+                </li>
+                <li className="flex my-4">
+                  <span className="mr-2">
+                    <IoMdCheckmarkCircleOutline size={30} color="#057d99" />
+                  </span>
+                  Maximum investment:{" "}
+                  <span className="font-bold">Unlimited</span>
+                </li>
+                <li className="flex my-4">
+                  <span className="mr-2">
+                    <IoMdCheckmarkCircleOutline size={30} color="#057d99" />
+                  </span>
+                  Daily profit range: <span className="font-bold">$525</span>
+                </li>
+                <li className="flex my-4">
+                  <span className="mr-2">
+                    <IoMdCheckmarkCircleOutline size={30} color="#057d99" />
+                  </span>
+                  Referral bonus: <span className="font-bold">5% 3% 1%</span>
+                </li>
+              </ul>
+            </div>
+            <div className="w-[277px] h-[50px] bg-[#057d99] border rounded-[5px] text-white text-center text-sm p-4 mt-12 uppercase hover:font-bold hover:bg-[#0A4F60]">
+              select plan
+            </div>
+          </div>
+        </div>
+      </div>
       {/* Investment Plans */}
+      {/* Investors */}
+      <div className="w-full h-[521px] md:h-[478px] flex flex-col items-center justify-center my-10">
+        <div className="flex items-center">
+          <div className="w-[70px] md:w-[231px] h-0 border border-[#057d99]"></div>
+          <div className="w-[290px] md:w-[714px] h-[76px] md:h-[57px] font-bold text-3xl md:text-5xl md:ml-8 text-center">
+            What our <font color="#057d99">investors</font> have to say.
+          </div>
+          <div className="w-[70px] md:w-[231px] h-0 border border-[#057d99]"></div>
+        </div>
+        <div className="flex flex-col md:flex-row">
+
+        </div>
+      </div>
+      {/* Investors */}
+      {/* Subscribe */}
+      <div className="w-full h-[392px] md:h-[375px] bg-[#f6fdff] flex flex-col items-center justify-center">
+        <div className="w-[238px] md:w-[646px] h-[76px] md:h-[57px] font-bold text-3xl md:text-5xl text-center">
+          Subscribe to our <font color="#057d99">Newsletter</font>
+        </div>
+        <div className="w-[268px] md:w-[515px] h-[32px] md:h-[23px] text-sm md:text-base text-center">
+          Stay up-to-date with our latest trends. Enter your e-mail to
+          subscribe.
+        </div>
+        <div className="flex flex-col md:flex-row md:w-[670px] h-20 md:h-[60px] md:border md:border-[#057d99] rounded-[5px] my-10">
+          <input
+            placeholder="E-mail"
+            className="w-[382px] md:w-[518px] h-[56px] p-2"
+          />
+          <button className="w-[382px] md:w-[152px] h-[56px] bg-[#057d99] border rounded-[5px] text-white uppercase text-base mt-10 md:mt-0">
+            subscribe
+          </button>
+        </div>
+      </div>
+      {/* Subscribe */}
+      <Footer />
     </>
   );
 };
