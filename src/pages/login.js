@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import Icon from "../assets/icon.png";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 
@@ -52,7 +50,6 @@ const Login = () => {
   };
   return (
     <>
-      <Navbar />
       <div className="w-full h-screen flex items-center justify-center">
         <div className="w-[400px] md:w-[500px] flex items-center justify-center bg-white shadow-xl border rounded-[10px]">
           <div className="w-[358px] m-4">
@@ -133,7 +130,6 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

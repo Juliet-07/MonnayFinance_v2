@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import Icon from "../assets/icon.png";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 
@@ -51,7 +49,7 @@ const Signup = () => {
           .then((response) => {
             console.log(response, "what is here");
             alert(response.message);
-            navigate("/signin");
+            navigate("/regsuccessful");
           });
       } catch (err) {
         console.log(err.message);
@@ -60,9 +58,8 @@ const Signup = () => {
   };
   return (
     <>
-      <Navbar />
       <div className="w-full h-screen flex items-center justify-center">
-        <div className="w-[400px] md:w-[500px] flex items-center justify-center bg-white shadow-xl border rounded-[10px] mt-28 mb-12">
+        <div className="w-[400px] md:w-[500px] flex items-center justify-center bg-white shadow-xl border rounded-[10px] mt-10 mb-8">
           <div className="w-[358px] m-4">
             <div className="flex flex-col items-center justify-center">
               <img src={Icon} alt="icon" className="w-10 h-10" />
@@ -203,7 +200,6 @@ const Signup = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
