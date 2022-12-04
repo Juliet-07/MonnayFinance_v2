@@ -38,7 +38,7 @@ const Navbar = () => {
           About us
         </NavLink>
         <NavLink
-          // to="/"
+          to="/investmentPlans"
           className="w-[141px] p-4 uppercase hover:font-bold"
           style={activeStyle}
         >
@@ -108,7 +108,7 @@ uppercase text-[#057D99] text-center p-3.5 border rounded-[5px] border-[#057D99]
             About us
           </NavLink>
           <NavLink
-            // to="/"
+            to="/investmentPlans"
             className="w-[141px] p-4 uppercase font-semibold"
             style={activeStyleMobile}
           >
