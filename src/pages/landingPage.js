@@ -27,7 +27,7 @@ const LandingPage = () => {
             You have the <font color="#057D99">best hands</font> handling your
             funds.
           </div>
-          <div className="w-[340px] md:w-[598px] mb-2 md:h-[207px] text-sm md:text-base font-semibold">
+          <div className="w-[340px] md:w-[598px] md:h-[207px] text-sm md:text-base font-semibold md:mx-2 md:my-4 py-4">
             We are dedicated in the cryptocurrency industry, with outstanding
             technology of bitcoin trading and bitcoin mining. Since we came into
             existence, our role is to offer each person the chance to attend the

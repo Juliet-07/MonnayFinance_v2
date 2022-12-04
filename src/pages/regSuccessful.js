@@ -7,7 +7,7 @@ const RegistrationSuccessful = () => {
   return (
     <>
       <div className="w-full h-screen flex items-center justify-center">
-        <div className="w-[400px] md:w-[500px] md:h-[570px] flex flex-col items-center justify-center shadow-xl border rounded-[10px]">
+        <div className="w-[400px] md:w-[500px] h-[570px] flex flex-col items-center justify-center shadow-xl border rounded-[10px]">
           <div>
             <img src={Icon} alt="icon" className="w-10 h-10" />
           </div>

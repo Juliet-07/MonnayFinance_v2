@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Jumbotron1 from "../components/Jumbotron1";
+import Navbar from "../components/Navbar";
 
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <>
+      <Navbar />
+      <Jumbotron1 title="About us" />
+    </>
+  );
+};
 
-export default About
+export default About;

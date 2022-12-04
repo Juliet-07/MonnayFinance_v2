@@ -12,6 +12,11 @@ const Navbar = () => {
       fontWeight: isActive ? "bold" : "normal",
     };
   };
+  const activeStyleMobile = ({ isActive }) => {
+    return {
+      color: isActive ? "#057d99" : "black",
+    };
+  };
   return (
     <div className="w-full flex justify-between md:justify-around items-center h-20 mx-auto px-4 text-black fixed z-10 bg-white">
       <div className="w-[148px] h-[38px]">
@@ -87,25 +92,57 @@ uppercase text-[#057D99] text-center p-3.5 border rounded-[5px] border-[#057D99]
             : "fixed left-[-100%]"
         }
       >
-        {/* <div className="w-[60px] h-[60px] flex items-center justify-center">
-          <img src={Logo} alt="guide me" />
-        </div> */}
-        <ul className="">
-          <li className="p-4">
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li className="p-4">
-            <NavLink to="/aboutus">About us</NavLink>
-          </li>
-          <li className="p-4">Contact us</li>
-        </ul>
-        <div className="w-[328px] h-[50px] py-[12px] px-[14px] m-6 bg-[#f27b0d] text-center text-white font-medium">
-          {" "}
-          <NavLink to="/aboutus">Sign up</NavLink>
+        <div className="flex flex-col p-4">
+          <NavLink
+            to="/"
+            className="w-20 p-4 uppercase font-semibold"
+            style={activeStyleMobile}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/aboutus"
+            className="w-26 p-4 uppercase font-semibold"
+            style={activeStyleMobile}
+          >
+            About us
+          </NavLink>
+          <NavLink
+            // to="/"
+            className="w-[141px] p-4 uppercase font-semibold"
+            style={activeStyleMobile}
+          >
+            investments
+          </NavLink>
+          <NavLink
+            // to="/"
+            className="w-[65px] p-4 uppercase font-semibold"
+            style={activeStyleMobile}
+          >
+            faq
+          </NavLink>
+          <NavLink
+            // to="/"
+            className="w-22 p-4 uppercase font-semibold"
+            style={activeStyleMobile}
+          >
+            courses
+          </NavLink>
+          <NavLink
+            // to="/"
+            className="w-20 p-4 uppercase font-semibold"
+            style={activeStyleMobile}
+          >
+            contact
+          </NavLink>
         </div>
-        <div className="w-[328px] h-[50px] py-[12px] px-[14px] m-6 border border-[#f27b0d] text-center text-black font-medium">
+        <div className="w-[352px] h-[60px] p-4 m-6 bg-[#057d99] text-center text-white font-bold text-sm rounded-md uppercase">
           {" "}
-          <NavLink to="/signin">Login</NavLink>
+          <NavLink to="/signup">Register</NavLink>
+        </div>
+        <div className="w-[352px] h-[60px] p-4 m-6 border border-[#057d99] text-center text-[#057d99] font-bold text-sm uppercase">
+          {" "}
+          <NavLink to="/signin">Log in</NavLink>
         </div>
       </div>
     </div>
