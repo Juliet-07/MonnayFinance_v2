@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BiHomeAlt, BiBarChartSquare } from "react-icons/bi";
-import { AiOutlineClockCircle } from "react-icons/ai";
+import { BsPersonCircle } from "react-icons/bs";
+import { AiOutlineClockCircle, AiOutlineBell } from "react-icons/ai";
 import { MdOutlineLogout } from "react-icons/md";
 import { IoIosPeople } from "react-icons/io";
 import { FiSettings } from "react-icons/fi";
+import { TbWorld } from "react-icons/tb";
 import Logo from "../assets/monnayLogo.png";
 import Footer from "./FooterDashboard";
 // import Header from "./Header";
@@ -87,20 +89,23 @@ const Layout = ({ children }) => {
             />
           </div>
         </div>
-        <div className="hidden md:flex items-center">
-          <div className="w-[148px] h-[38px] ml-4">
-            <p>checking if something else can be here</p>
+        <div className="hidden md:flex">
+          <div className="w-10 h-10 rounded-full bg-[#f5f5f5] flex items-center justify-center text-xl text-[#636363] mr-10">
+            <TbWorld />
           </div>
-          <div className="w-[148px] h-[38px] ml-4">
-            <p>checking if something else can be here</p>
+          <div className="w-10 h-10 rounded-full bg-[#f5f5f5] flex items-center justify-center text-xl text-[#636363] mr-10">
+            <AiOutlineBell />
+          </div>
+          <div className="w-10 h-10 rounded-full bg-[#f5f5f5] flex items-center justify-center text-xl text-[#636363] mr-10">
+            <BsPersonCircle />
           </div>
         </div>
       </div>
       <div className="flex flex-row w-full h-full">
         <div
-          className={`hidden bg-white h-screen p-5 pt-8 ${
-            open ? "w-72" : "w-24"
-          } duration-300 relative`}
+          className={`bg-white h-screen p-5 pt-8 ${
+            open ? "w-56" : "w-20"
+          } duration-300 relative `}
         >
           <ul className="pt-2">
             {Menus.map((menu, index) => (
@@ -114,7 +119,7 @@ const Layout = ({ children }) => {
         </div>
         <div className="flex-1">
           {/* <Header text="Dashboard" /> */}
-          <main className="w-full h-full p-5 bg-[#E5E5E5]">{children}</main>
+          <main className="w-full h-full p-5 bg-[#f6fdff]">{children}</main>
         </div>
       </div>
       <Footer />
