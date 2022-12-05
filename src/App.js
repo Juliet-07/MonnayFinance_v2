@@ -6,6 +6,7 @@ import Login from "./pages/login";
 import Signup from "./pages/signup";
 import RegistrationSuccessful from "./pages/regSuccessful";
 import InvestmentPlans from "./pages/invesmentPlans";
+import FAQ from "./pages/faq";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/signin" element={<Login />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/investmentPlans" element={<InvestmentPlans />} />
+      <Route path="/faq" element={<FAQ />} />
     </Routes>
   );
 }

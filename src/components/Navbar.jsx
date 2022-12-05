@@ -45,7 +45,7 @@ const Navbar = () => {
           investments
         </NavLink>
         <NavLink
-          // to="/"
+          to="/faq"
           className="w-[65px] p-4 uppercase hover:font-bold"
           style={activeStyle}
         >
@@ -115,7 +115,7 @@ uppercase text-[#057D99] text-center p-3.5 border rounded-[5px] border-[#057D99]
             investments
           </NavLink>
           <NavLink
-            // to="/"
+            to="/faq"
             className="w-[65px] p-4 uppercase font-semibold"
             style={activeStyleMobile}
           >
