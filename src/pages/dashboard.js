@@ -49,7 +49,9 @@ const Dashboard = () => {
         />
         <div className="flex-col w-[124px] h-[52px]">
           <p className="font-semibold text-sm">Available balance</p>
-          <p className="font-bold text-2xl text-[#057D99]">$ 30,000</p>
+          <p className="font-bold text-2xl text-[#057D99]">
+            $ {data.walletBalance}
+          </p>
         </div>
         <div className="flex">
           <div className="w-[154px] h-[50px] bg-[#057D99] mr-4 rounded-lg p-3 text-center font-normal text-white text-sm uppercase">
