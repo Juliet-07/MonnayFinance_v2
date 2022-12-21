@@ -276,9 +276,7 @@ const LandingPage = () => {
           </div>
           <div className="w-[70px] md:w-[231px] h-0 border border-[#057d99]"></div>
         </div>
-        <div className="flex flex-col md:flex-row">
-
-        </div>
+        <div className="flex flex-col md:flex-row"></div>
       </div>
       {/* Investors */}
       {/* Subscribe */}

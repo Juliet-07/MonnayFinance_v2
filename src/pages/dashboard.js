@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import moment from "moment";
 import { AiOutlineDollar } from "react-icons/ai";
 import Coin from "../assets/monnayCoin.png";
 import { BsLink45Deg } from "react-icons/bs";
 import { FiCopy } from "react-icons/fi";
+import Chart from "../components/Chart";
+import { Translator } from "../components/Translator";
+import Chat from "../components/Chatbot";
 
 const Dashboard = () => {
   const [user, setUser] = useState("");
@@ -54,12 +58,16 @@ const Dashboard = () => {
           </p>
         </div>
         <div className="flex">
-          <div className="w-[154px] h-[50px] bg-[#057D99] mr-4 rounded-lg p-3 text-center font-normal text-white text-sm uppercase">
-            Withdraw
-          </div>
-          <div className="w-[154px] h-[50px] bg-white mr-8 rounded-lg p-3 text-center font-normal text-[#057D99] text-sm uppercase border border-[#057D99]">
-            Deposit
-          </div>
+          <Link to="/withdraw">
+            <div className="w-[154px] h-[50px] bg-[#057D99] mr-4 rounded-lg p-3 text-center font-normal text-white text-sm uppercase">
+              Withdraw
+            </div>
+          </Link>
+          <Link to="/deposit">
+            <div className="w-[154px] h-[50px] bg-white mr-8 rounded-lg p-3 text-center font-normal text-[#057D99] text-sm uppercase border border-[#057D99]">
+              Deposit
+            </div>
+          </Link>
         </div>
       </div>
       <div className="w-full grid grid-cols md:grid-cols-4 gap-10">
@@ -108,7 +116,7 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center m-10">
+      <div className="flex items-center justify-center m-10">
         <div className="flex-col w-[414px] md:w-[574px] h-[190px] rounded-xl border-b-8 border-b-[#057D99] bg-white py-10 px-6">
           <p className="font-semibold text-[#057D99] text-2xl uppercase">
             refer and earn
@@ -131,7 +139,9 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        {/* <div>chart</div> */}
+        {/* <Translator /> */}
+        <Chart />
+        <Chat />
       </div>
     </div>
   );

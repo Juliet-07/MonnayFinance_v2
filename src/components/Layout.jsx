@@ -10,6 +10,7 @@ import { FiSettings } from "react-icons/fi";
 import { TbWorld } from "react-icons/tb";
 import Logo from "../assets/monnayLogo.png";
 import Footer from "./FooterDashboard";
+import { Translator } from "./Translator";
 // import Header from "./Header";
 
 const Layout = ({ children }) => {
@@ -53,7 +54,7 @@ const Layout = ({ children }) => {
     return (
       <NavLink to={menu.path} style={activeStyle}>
         <li
-          className={`w-[250px] h-[50px] text-black flex items-center gap-x-4 cursor-pointer p-2 hover:bg-[#057D99] hover:text-white hover:font-semibold rounded-md mt-2 ${
+          className={`h-[50px] text-black flex items-center gap-x-4 cursor-pointer p-2 hover:bg-[#057D99] hover:text-white hover:font-semibold rounded-md mt-2 ${
             menu.spacing ? "mt-32" : "mt-2"
           }`}
         >
@@ -73,7 +74,7 @@ const Layout = ({ children }) => {
   };
   return (
     <>
-      <div className="px-10 py-6 flex items-center justify-between w-full h-20 ">
+      <div className="px-10 py-6 flex items-center justify-between w-full h-20">
         <div className="flex items-center">
           <GiHamburgerMenu
             className={`text-2xl md:text-3xl text-black cursor-pointer ${
@@ -90,6 +91,7 @@ const Layout = ({ children }) => {
           </div>
         </div>
         <div className="hidden md:flex">
+          {/* <Translator /> */}
           <div className="w-10 h-10 rounded-full bg-[#f5f5f5] flex items-center justify-center text-xl text-[#636363] mr-10">
             <TbWorld />
           </div>

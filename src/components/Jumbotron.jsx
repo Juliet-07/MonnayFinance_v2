@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import Jumbo from "../assets/monnayJumbo.png";
 
 const Jumbotron = () => {
@@ -14,7 +15,11 @@ const Jumbotron = () => {
           We create equal opportunities for all our investors to thrive in the
           crypto and forex markets.
         </div>
-        <div className="w-[245px] md:w-[149px] h-[60px] md:h-[50px] uppercase border border-white rounded-[5px] text-center md:mt-4 p-4 md:p-2">get started</div>
+        <NavLink to="/signup">
+          <div className="w-[245px] md:w-[149px] h-[60px] md:h-[50px] uppercase border border-white rounded-[5px] text-center md:mt-4 p-4 md:p-2">
+            get started
+          </div>
+        </NavLink>
       </div>
     </div>
   );
