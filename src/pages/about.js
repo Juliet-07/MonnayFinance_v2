@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Jumbotron1 from "../components/Jumbotron1";
 import Footer from "../components/Footer";
 import CEO from "../assets/ceo.jpeg";
+import {RiDoubleQuotesL} from "react-icons/ri"
 
 const About = () => {
   return (
@@ -111,7 +112,38 @@ const About = () => {
           </div>
           <div className="w-[70px] md:w-[231px] h-0 border border-[#057d99]"></div>
         </div>
-        <div className="flex flex-col md:flex-row"></div>
+        <div className="flex flex-col md:flex-row mt-12">
+          <div className="w-[325px] md:w-[590px] h-[177px] md:h-[292px] rounded-md md:rounded-lg bg-white shadow-xl mb-10 md:mr-10 flex items-center justify-center">
+            <div className="flex flex-col items-center justify-center">
+              <div className="text-[#057D99] text-left text-2xl md:text-6xl relative -left-[110px] md:-left-[170px]">
+                <RiDoubleQuotesL />
+              </div>
+              <div className="w-[200px] md:w-[298px] h-[54px] md:h-[110px] font-semibold text-[8px] leading-[13.35px] md:text-base text-black">
+                A broad range of excellent investment opportunities and high
+                quality events. The team at Monnay Finance are highly
+                professional and they’ve helped build my portfolio.
+              </div>
+              <div className="w-[117px] h-[26px] font-bold text-xs md:text-xl text-right mt-2 md:mt-[29px] relative left-12">
+                Tony Angelo
+              </div>
+            </div>
+          </div>
+          <div className="w-[325px] md:w-[590px] h-[177px] md:h-[292px] rounded-md md:rounded-lg bg-white shadow-xl flex items-center justify-center">
+            <div className="flex flex-col items-center justify-center">
+              <div className="text-[#057D99] text-left text-2xl md:text-6xl relative -left-[110px] md:-left-[170px]">
+                <RiDoubleQuotesL />
+              </div>
+              <div className="w-[200px] md:w-[298px] h-[54px] md:h-[110px] font-semibold text-[8px] leading-[13.35px] md:text-base text-black">
+                A broad range of excellent investment opportunities and high
+                quality events. The team at Monnay Finance are highly
+                professional and they’ve helped build my portfolio.
+              </div>
+              <div className="w-[117px] h-[26px] font-bold text-xs md:text-xl text-right mt-2 md:mt-[29px] relative left-12">
+                Tony Angelo
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <Footer />
     </>

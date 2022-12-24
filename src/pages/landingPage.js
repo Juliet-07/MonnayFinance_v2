@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Jumbotron from "../components/Jumbotron";
 import Phone from "../assets/monnayHome.jpg";
 import { TbHeartHandshake } from "react-icons/tb";
 import { BiBarChartSquare } from "react-icons/bi";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { RiDoubleQuotesL } from "react-icons/ri";
 import Strategy from "../assets/monnayStrategy.png";
 import Footer from "../components/Footer";
 
@@ -160,9 +162,11 @@ const LandingPage = () => {
                 </li>
               </ul>
             </div>
-            <div className="w-[277px] h-[50px] bg-[#057d99] border rounded-[5px] text-white text-center text-sm p-4 mt-12 uppercase hover:font-bold hover:bg-[#0A4F60]">
-              select plan
-            </div>
+            <Link to="/signin">
+              <div className="w-[277px] h-[50px] bg-[#057d99] border rounded-[5px] text-white text-center text-sm p-4 mt-12 uppercase hover:font-bold hover:bg-[#0A4F60]">
+                select plan
+              </div>
+            </Link>
           </div>
           <div className="w-[377px] h-[629px] border rounded-[10px] bg-[#057D99] flex flex-col items-center justify-center text-white mx-[60px] my-[42px] md:my-0">
             <h2 className="text-5xl font-bold">Standard</h2>
@@ -210,9 +214,11 @@ const LandingPage = () => {
                 </li>
               </ul>
             </div>
-            <div className="w-[277px] h-[50px] bg-white border rounded-[5px] text-[#057D99] text-center text-sm p-4 mt-12 uppercase hover:font-bold">
-              select plan
-            </div>
+            <Link to="/signin">
+              <div className="w-[277px] h-[50px] bg-white border rounded-[5px] text-[#057D99] text-center text-sm p-4 mt-12 uppercase hover:font-bold">
+                select plan
+              </div>
+            </Link>
           </div>
           <div className="w-[377px] h-[629px] border rounded-[10px] bg-white flex flex-col items-center justify-center">
             <h2 className="text-5xl font-bold text-[#057d99]">Platinum</h2>
@@ -260,9 +266,11 @@ const LandingPage = () => {
                 </li>
               </ul>
             </div>
-            <div className="w-[277px] h-[50px] bg-[#057d99] border rounded-[5px] text-white text-center text-sm p-4 mt-12 uppercase hover:font-bold hover:bg-[#0A4F60]">
-              select plan
-            </div>
+            <Link to="/signin">
+              <div className="w-[277px] h-[50px] bg-[#057d99] border rounded-[5px] text-white text-center text-sm p-4 mt-12 uppercase hover:font-bold hover:bg-[#0A4F60]">
+                select plan
+              </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -276,7 +284,38 @@ const LandingPage = () => {
           </div>
           <div className="w-[70px] md:w-[231px] h-0 border border-[#057d99]"></div>
         </div>
-        <div className="flex flex-col md:flex-row"></div>
+        <div className="flex flex-col md:flex-row mt-16">
+          <div className="w-[325px] md:w-[590px] h-[177px] md:h-[292px] rounded-md md:rounded-lg bg-white shadow-xl mb-10 md:mr-10 flex items-center justify-center">
+            <div className="flex flex-col items-center justify-center">
+              <div className="text-[#057D99] text-left text-2xl md:text-6xl relative -left-[110px] md:-left-[170px]">
+                <RiDoubleQuotesL />
+              </div>
+              <div className="w-[200px] md:w-[298px] h-[54px] md:h-[110px] font-semibold text-[8px] leading-[13.35px] md:text-base text-black">
+                A broad range of excellent investment opportunities and high
+                quality events. The team at Monnay Finance are highly
+                professional and they’ve helped build my portfolio.
+              </div>
+              <div className="w-[117px] h-[26px] font-bold text-xs md:text-xl text-right mt-2 md:mt-[29px] relative left-12">
+                Tony Angelo
+              </div>
+            </div>
+          </div>
+          <div className="w-[325px] md:w-[590px] h-[177px] md:h-[292px] rounded-md md:rounded-lg bg-white shadow-xl flex items-center justify-center">
+            <div className="flex flex-col items-center justify-center">
+              <div className="text-[#057D99] text-left text-2xl md:text-6xl relative -left-[110px] md:-left-[170px]">
+                <RiDoubleQuotesL />
+              </div>
+              <div className="w-[200px] md:w-[298px] h-[54px] md:h-[110px] font-semibold text-[8px] leading-[13.35px] md:text-base text-black">
+                A broad range of excellent investment opportunities and high
+                quality events. The team at Monnay Finance are highly
+                professional and they’ve helped build my portfolio.
+              </div>
+              <div className="w-[117px] h-[26px] font-bold text-xs md:text-xl text-right mt-2 md:mt-[29px] relative left-12">
+                Tony Angelo
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       {/* Investors */}
       {/* Subscribe */}

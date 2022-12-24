@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Jumbotron1 from "../components/Jumbotron1";
 import Footer from "../components/Footer";
@@ -60,9 +61,11 @@ const InvestmentPlans = () => {
                 </li>
               </ul>
             </div>
-            <div className="w-[277px] h-[50px] bg-[#057d99] border rounded-[5px] text-white text-center text-sm p-4 mt-12 uppercase hover:font-bold hover:bg-[#0A4F60]">
-              select plan
-            </div>
+            <Link to="/signin">
+              <div className="w-[277px] h-[50px] bg-[#057d99] border rounded-[5px] text-white text-center text-sm p-4 mt-12 uppercase hover:font-bold hover:bg-[#0A4F60]">
+                select plan
+              </div>
+            </Link>
           </div>
           <div className="w-[377px] h-[629px] border rounded-[10px] bg-[#057D99] flex flex-col items-center justify-center text-white mx-[60px] my-[42px] md:my-0">
             <h2 className="text-5xl font-bold">Standard</h2>
@@ -110,9 +113,11 @@ const InvestmentPlans = () => {
                 </li>
               </ul>
             </div>
-            <div className="w-[277px] h-[50px] bg-white border rounded-[5px] text-[#057D99] text-center text-sm p-4 mt-12 uppercase hover:font-bold">
-              select plan
-            </div>
+            <Link to="/signin">
+              <div className="w-[277px] h-[50px] bg-white border rounded-[5px] text-[#057D99] text-center text-sm p-4 mt-12 uppercase hover:font-bold">
+                select plan
+              </div>
+            </Link>
           </div>
           <div className="w-[377px] h-[629px] border rounded-[10px] bg-white flex flex-col items-center justify-center">
             <h2 className="text-5xl font-bold text-[#057d99]">Platinum</h2>
@@ -160,9 +165,11 @@ const InvestmentPlans = () => {
                 </li>
               </ul>
             </div>
-            <div className="w-[277px] h-[50px] bg-[#057d99] border rounded-[5px] text-white text-center text-sm p-4 mt-12 uppercase hover:font-bold hover:bg-[#0A4F60]">
-              select plan
-            </div>
+            <Link to="/signin">
+              <div className="w-[277px] h-[50px] bg-[#057d99] border rounded-[5px] text-white text-center text-sm p-4 mt-12 uppercase hover:font-bold hover:bg-[#0A4F60]">
+                select plan
+              </div>
+            </Link>
           </div>
         </div>
       </div>

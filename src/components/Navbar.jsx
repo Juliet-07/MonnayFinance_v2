@@ -52,14 +52,14 @@ const Navbar = () => {
           faq
         </NavLink>
         <NavLink
-          // to="/"
+          to="/courses"
           className="w-22 p-4 uppercase hover:font-bold"
           style={activeStyle}
         >
           courses
         </NavLink>
         <NavLink
-          // to="/"
+          to="/contact-us"
           className="w-20 p-4 uppercase hover:font-bold"
           style={activeStyle}
         >
@@ -122,14 +122,14 @@ uppercase text-[#057D99] text-center p-3.5 border rounded-[5px] border-[#057D99]
             faq
           </NavLink>
           <NavLink
-            // to="/"
+            to="/courses"
             className="w-22 p-4 uppercase font-semibold"
             style={activeStyleMobile}
           >
             courses
           </NavLink>
           <NavLink
-            // to="/"
+            to="/contact-us"
             className="w-20 p-4 uppercase font-semibold"
             style={activeStyleMobile}
           >

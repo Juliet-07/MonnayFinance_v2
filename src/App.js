@@ -7,6 +7,8 @@ import RegistrationSuccessful from "./pages/regSuccessful";
 import InvestmentPlans from "./pages/invesmentPlans";
 import FAQ from "./pages/faq";
 import DashboardRoutes from "./DashboardRoutes";
+import Courses from "./pages/courses";
+import Contact from "./pages/contact";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Route path="/signin" element={<Login />} />
       <Route path="/investmentPlans" element={<InvestmentPlans />} />
       <Route path="/faq" element={<FAQ />} />
+      <Route path="/courses" element={<Courses />} />
+      <Route path="/contact-us" element={<Contact />} />
       <Route path="/*" element={<DashboardRoutes />} />
     </Routes>
   );

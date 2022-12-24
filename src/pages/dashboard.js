@@ -139,9 +139,9 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        {/* <Translator /> */}
-        <Chart />
-        <Chat />
+        <Translator />
+        {/* <Chart /> */}
+        {/* <Chat /> */}
       </div>
     </div>
   );
