@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import Dashboard from "./pages/dashboard";
 import Deposit from "./pages/deposit";
 import History from "./pages/history";
+import Invest from "./pages/invest";
 import Investments from "./pages/investments";
 import Referrals from "./pages/referrals";
 import Settings from "./pages/settings";
@@ -21,6 +22,7 @@ const DashboardRoutes = () => {
           <Route path="/investments" element={<Investments />} />
           <Route path="/withdraw" element={<Withdraw />} />
           <Route path="/deposit" element={<Deposit />} />
+          <Route path="/invest" element={<Invest />} />
         </Routes>
       </Layout>
     </div>
