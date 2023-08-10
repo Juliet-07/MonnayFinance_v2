@@ -78,8 +78,8 @@ const LandingPage = () => {
       </div>
       {/* Trust */}
       {/* Strategy */}
-      <div className="w-full flex flex-col-reverse md:flex-row bg-red-700">
-        <div className="flex flex-col bg-[#0a4f60] items-center justify-center">
+      <div className="w-full flex flex-col-reverse md:flex-row">
+        <div className="w-[50%] flex flex-col bg-[#0a4f60] items-center justify-center">
           <div className="w-[190px] md:w-[290px] h-[39px] md:h-[57px] font-bold text-3xl md:text-5xl text-white relative top-2 md:top-0 left-[-75px]">
             Our Strategy
           </div>
@@ -101,7 +101,7 @@ const LandingPage = () => {
             conditions are challenging.
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-[50%]">
           <img src={Strategy} alt="Strategy Session" />
         </div>
       </div>
@@ -109,7 +109,7 @@ const LandingPage = () => {
       {/* Investment Plans */}
       <div className="w-full h-full my-10">
         <div className="font-bold text-3xl md:text-5xl flex items-center justify-center">
-          Our <font color="#057d99">Investment Plans</font>
+          Our <font color="#057d99"> Investment Plans</font>
           {/* Our <font color="#057d99">Investment Plans</font> */}
         </div>
         <div
