@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        primaryRegular: ["Regular"],
+        primaryMedium: ["Medium"],
+        primarySemibold: ["SemiBold"],
+        primaryBold: ["Bold"],
+      },
+    },
   },
   plugins: [require("@tailwindcss/forms")],
 };

@@ -2,11 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Open Sans:wght@300;400;500;600;700;800;900&display=$wap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 @layer base {
   body {
-    @apply font-[Open-Sans];
-    /* @apply font-[Sans-Serif]; */
+    @apply font-[OpenSans];
   }
+}
+
+@font-face {
+  font-family: "Regular";
+  src: local("OpenSans-Regular"),
+    url("./fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Medium";
+  src: local("OpenSans-Medium"),
+    url("./fonts/OpenSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bold";
+  src: local("OpenSans-Bold"),
+    url("./fonts/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SemiBold";
+  src: local("OpenSans-SemiBold"),
+    url("./fonts/OpenSans-SemiBold.ttf") format("truetype");
 }
